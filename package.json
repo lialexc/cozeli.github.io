@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "deploy": "node scripts/deploy.js",
     "webhook:listen": "ngrok http 3000"
   },
@@ -29,6 +29,10 @@
     "winston": "^3.19.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "@jest/globals": "^30.2.0",
+    "babel-jest": "^30.2.0",
     "eslint": "^9.39.2",
     "jest": "^30.2.0",
     "ngrok": "latest",
